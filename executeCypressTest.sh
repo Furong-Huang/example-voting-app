@@ -1,6 +1,6 @@
 set -x
 
-cd BigCommerce-APITesting-using-Cypress
+cd cypress_automation_testing-commercial_website
 
 npm install
 npx cypress run
