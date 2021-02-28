@@ -71,7 +71,7 @@ pipeline {
         }
       }
       steps {
-        withDockerRegistry([usernamePassword(credentialsId: 'docker4170', passwordVariable: 'Docker@4170', usernameVariable: 'docker4170')]) {
+        withCredentials([usernamePassword(credentialsId: 'docker4170', passwordVariable: 'Docker@4170', usernameVariable: 'docker4170')]) {
           sh 'docker push docker4170/result'
         }
       }
