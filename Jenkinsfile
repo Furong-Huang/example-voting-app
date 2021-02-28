@@ -25,9 +25,11 @@ pipeline {
     }
     stage('Cypress Integration Testing') {
       steps {
-        sh 'echo Start Cypress Integration Testing'
-        bash '/var/jenkins_home/workspace/pipeline/getCypressCode.sh'
-        bash '/var/jenkins_home/workspace/pipeline/executeCypressTest.sh'
+        sh '''#!/bin/bash
+        'echo Start Cypress Integration Testing'
+        '/var/jenkins_home/workspace/pipeline/getCypressCode.sh'
+        '/var/jenkins_home/workspace/pipeline/executeCypressTest.sh'
+        '''
      }
     }
     stage('Build Result Image') {
