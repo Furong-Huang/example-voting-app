@@ -71,7 +71,7 @@ pipeline {
         }
       }
       steps {
-        withDockerRegistry(credentialsId: 'docker4170', url:'') {
+        withDockerRegistry(credentialsId: 'cad4f32a-2bfe-4db7-b8d9-5b8362f2546e', url:'') {
           sh 'docker push docker4170/result'
         }
       }
@@ -83,7 +83,7 @@ pipeline {
         }
       }
       steps {
-        withDockerRegistry(credentialsId: 'docker4170', url:'') {
+        withDockerRegistry(credentialsId: 'cad4f32a-2bfe-4db7-b8d9-5b8362f2546e', url:'') {
           sh 'docker push docker4170/vote'
         }
       }
@@ -95,7 +95,7 @@ pipeline {
         }
       }
       steps {
-        withDockerRegistry(credentialsId: 'docker4170', url:'') {
+        withDockerRegistry(credentialsId: 'cad4f32a-2bfe-4db7-b8d9-5b8362f2546e', url:'') {
           sh 'docker push docker4170/worker'
         }
       }
