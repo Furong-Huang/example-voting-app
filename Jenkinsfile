@@ -103,8 +103,8 @@ pipeline {
     stage('Deployment') {
       steps {
         sshCommand remote: remote, command: 
-        "cd /home && " +
-        "git pull && " +
+        "cd /home/don/projects/example-voting-app && " +
+        "git pull https://github.com/Furong-Huang/example-voting-app.git && " +
         "docker-compose pull && " +
         "docker-compose down && " +
         "docker-compose up -d && " + 
