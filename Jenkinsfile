@@ -27,7 +27,6 @@ pipeline {
       steps {
         sh 'echo Start Cypress Integration Testing'
         sh '''
-        cd /var/jenkins_home/workspace
         bash /var/jenkins_home/workspace/pipeline/getCypressCode.sh
         bash /var/jenkins_home/workspace/pipeline/executeCypressTest.sh
         '''
