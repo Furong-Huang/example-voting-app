@@ -1,6 +1,6 @@
 def remote = [:]
 remote.name = 'web server'
-remote.host = '45.63.27.112'
+remote.host = '45.32.246.10'
 remote.user = 'admin'
 remote.password = 'admin'
 remote.allowAnyHosts = true
